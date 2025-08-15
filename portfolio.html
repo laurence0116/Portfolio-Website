@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Assistant Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .tool-logo {
+      transition: transform 0.4s ease;
+    }
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    .spin {
+      animation: spinLogo 6s linear infinite;
+    }
+    @keyframes spinLogo {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-16 gap-8">
+      <!-- Text -->
+      <div class="md:w-1/2 fade-up">
+        <h1 class="text-4xl font-bold mb-4">Laurence Ortega</h1>
+        <p class="text-lg opacity-90 mb-6">Virtual Assistant | Administrative & CRM Specialist</p>
+        <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow hover:shadow-lg transition">
+          Contact Me
+        </a>
+      </div>
+      <!-- Image -->
+      <div class="md:w-1/2 flex justify-center fade-up">
+        <img src="https://via.placeholder.com/400x400" alt="Profile" class="rounded-full shadow-lg border-4 border-white">
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="max-w-6xl mx-auto py-12 px-6 text-center fade-up">
+    <h2 class="text-2xl font-bold border-b-4 border-blue-500 inline-block pb-1 mb-6">About Me</h2>
+    <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+        IT graduate from West Visayas State University-Pototan Campus with hands-on HRMO experience. My technical skills are complemented by a strong 
+        understanding of administrative tasks. As an empathetic introvert, I excel in focused problem-solving and user-centered solutions.
+      A a detail-oriented Virtual Assistant specializing in administrative support and CRM management.
+      From scheduling and email handling to maintaining customer databases and creating reports,
+      I help executives and businesses stay organized and productive.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-white py-12 fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center border-b-4 border-blue-500 inline-block pb-1 mb-8">Services Offered</h2>
+      <div class="grid gap-6 md:grid-cols-3 text-center">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          📅 <p class="mt-2 font-semibold">Calendar & Email Management</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          📂 <p class="mt-2 font-semibold">CRM Data Entry & Management</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          📊 <p class="mt-2 font-semibold">Report Generation & Analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools I Use -->
+  <section class="py-12 fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center border-b-4 border-blue-500 inline-block pb-1 mb-8">Tools I Use</h2>
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center">
+        
+        <!-- Microsoft Office -->
+        <div class="p-4 bg-white rounded-xl shadow hover:scale-105 transform transition tool-card">
+          <img src="images/microsoft.svg.png" class="mx-auto h-12 tool-logo" alt="Microsoft Office">
+          <p class="mt-2 font-medium">Microsoft Office</p>
+        </div>
+        
+        <!-- Google Workspace -->
+        <div class="p-4 bg-white rounded-xl shadow hover:scale-105 transform transition tool-card">
+          <img src="images/gwork.jpg" class="mx-auto h-12 tool-logo" alt="Google Workspace">
+          <p class="mt-2 font-medium">Google Workspace</p>
+        </div>
+
+        <!-- HubSpot CRM -->
+        <div class="p-4 bg-white rounded-xl shadow hover:scale-105 transform transition tool-card">
+          <img src="images/hub.jpg" class="mx-auto h-12 tool-logo" alt="HubSpot">
+          <p class="mt-2 font-medium">HubSpot CRM</p>
+        </div>
+
+        <!-- Salesforce -->
+        <div class="p-4 bg-white rounded-xl shadow hover:scale-105 transform transition tool-card">
+          <img src="images/chat.png" class="mx-auto h-12 tool-logo" alt="ChatGPT">
+          <p class="mt-2 font-medium">ChatGPT</p>
+        </div>
+
+        <!-- Trello -->
+        <div class="p-4 bg-white rounded-xl shadow hover:scale-105 transform transition tool-card">
+          <img src="images/trello.png" class="mx-auto h-12 tool-logo" alt="Trello">
+          <p class="mt-2 font-medium">Trello</p>
+        </div>
+
+        <!-- Asana -->
+        <div class="p-4 bg-white rounded-xl shadow hover:scale-105 transform transition tool-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Asana_logo.svg" class="mx-auto h-12 tool-logo" alt="Asana">
+          <p class="mt-2 font-medium">Asana</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-blue-50 py-12 fade-up">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center border-b-4 border-blue-500 inline-block pb-1 mb-8">Contact Me</h2>
+      <form class="bg-white p-6 rounded-xl shadow space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <textarea rows="5" placeholder="Your Message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        <button class="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>© 2025 Laurence Ortega | Virtual Assistant</p>
+  </footer>
+
+  <!-- JavaScript for Tool Animation -->
+  <script>
+    document.querySelectorAll('.tool-card').forEach((card, index) => {
+      const logo = card.querySelector('.tool-logo');
+      
+      // Alternate animations
+      if (index % 2 === 0) {
+        logo.classList.add('floating');
+      } else {
+        logo.classList.add('floating');
+      }
+
+      // Hover effect to temporarily spin faster
+      card.addEventListener('mouseenter', () => {
+        logo.style.transform = 'scale(1.1) rotate(15deg)';
+      });
+      card.addEventListener('mouseleave', () => {
+        logo.style.transform = 'scale(1) rotate(0deg)';
+      });
+    });
+  </script>
+
+</body>
+</html>
